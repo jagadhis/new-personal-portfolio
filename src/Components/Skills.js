@@ -29,37 +29,35 @@ const Skills = () => {
       };
   return (
    <section className="skill" id="skills">
-    <Container>
-        <Row>
-            <Col>
-            <div className='skill-bx'>
-                <h2>
-                    Skills
-                </h2>
-                <p>Hello Hey </p>
-                <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                    <div className='item'>
-                        <img src={meter1} alt="logo"/>
-                        <h5>Web Development</h5>
+   <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="skill-bx wow zoomIn">
+                        <h2>Skills</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                            <div className="item">
+                                <img src={meter1} alt="Image1" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image2" />
+                                <h5>Brand Identity</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image5" />
+                                <h5>Logo Design</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image3" />
+                                <h5>Web Development</h5>
+                            </div>
+                        </Carousel>
                     </div>
-                    <div className='item'>
-                        <img src={meter2} alt="logotwo"/>
-                        <h5>Full Stack Development</h5>
-                    </div>
-                    <div className='item'>
-                        <img src={meter3} alt="logo3"/>
-                        <h5>Logo Designing</h5>
-                    </div>
-                    <div className='item'>
-                        <img src={meter1} alt="logo4"/>
-                        <h5>Web Development</h5>
-                    </div>
-                </Carousel>
+                </div>
             </div>
-            </Col>
-        </Row>
-    </Container>
-<img className='background-iamge-left' src={colorSharp} alt="bg" />
+        </div>
+        <img className="background-image-left" src={colorSharp} alt="Image4" />
    </section>
   )
 }
